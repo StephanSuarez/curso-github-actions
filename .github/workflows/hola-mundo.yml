@@ -1,6 +1,7 @@
-name: Aprendiendo Github actions
-run-name: !estoy aprendiendo github actions!
+name: Aprendiendo Github Actions
+
 on: [push]
+
 jobs: 
   hola-mundo:
     runs-on: ubuntu-latest
@@ -11,5 +12,5 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 'latest'
-      - name: correr script
+      - name: Correr script
         run: node hola_mundo.js
